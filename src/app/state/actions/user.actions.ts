@@ -3,7 +3,7 @@ import { UserActionTypes } from './types';
 
 export class GetUserDataAction implements Action {
   readonly type = UserActionTypes.GET_USER_DATA;
-  constructor(readonly payload: any) {}
+  constructor() {}
 }
 
 export class GetUserDataSuccessAction implements Action {

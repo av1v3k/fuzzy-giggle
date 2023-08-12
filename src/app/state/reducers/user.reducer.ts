@@ -1,3 +1,4 @@
+import { Action } from '@ngrx/store';
 import { UserAction } from '../actions';
 import { UserActionTypes } from '../actions/types';
 
@@ -7,22 +8,22 @@ export const initialUserState = {
   usererror: null,
 };
 
-export function userReducer(state: any = initialUserState, action: UserAction) {
-  switch (action.type) {
+export function userReducer(state: any = initialUserState, action: Action): any {
+    const userAction = action as UserAction;
+  switch (userAction.type) {
     case UserActionTypes.GET_USER_DATA:
       return {
         ...state,
-        userreq: action?.payload,
       };
     case UserActionTypes.GET_USER_DATA_SUCCESS:
       return {
         ...state,
-        userres: action?.payload,
+        userres: userAction?.payload,
       };
     case UserActionTypes.GET_USER_DATA_ERROR:
       return {
         ...state,
-        usererror: action?.payload,
+        usererror: userAction?.payload,
       };
     default:
       return state;
