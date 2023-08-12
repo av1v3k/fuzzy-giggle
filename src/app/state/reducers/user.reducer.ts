@@ -1,8 +1,30 @@
-import { createReducer, on } from '@ngrx/store';
-import { getData }  from '../actions/user.action';
+import { UserAction } from '../actions';
+import { UserActionTypes } from '../actions/types';
 
-export const initialState = {
-    users: null
+export const initialUserState = {
+  userreq: null,
+  userres: null,
+  usererror: null,
 };
 
-export function reducer(state = initialState, action: )
+export function userReducer(state: any = initialUserState, action: UserAction) {
+  switch (action.type) {
+    case UserActionTypes.GET_USER_DATA:
+      return {
+        ...state,
+        userreq: action?.payload,
+      };
+    case UserActionTypes.GET_USER_DATA_SUCCESS:
+      return {
+        ...state,
+        userres: action?.payload,
+      };
+    case UserActionTypes.GET_USER_DATA_ERROR:
+      return {
+        ...state,
+        usererror: action?.payload,
+      };
+    default:
+      return state;
+  }
+}
