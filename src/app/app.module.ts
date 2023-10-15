@@ -14,6 +14,8 @@ import { userReducer } from './state/reducers/user.reducer';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreDevtools, StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DefaultDashboardComponent } from './components/default-dashboard/default-dashboard.component';
+import { InsideDashboardComponent } from './components/inside-dashboard/inside-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     DashboardComponent,
     HeroesComponent,
+    DefaultDashboardComponent,
+    InsideDashboardComponent,
   ],
   imports: [
     BrowserModule,
