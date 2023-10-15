@@ -13,6 +13,7 @@ import { StoreModule } from '@ngrx/store';
 import { userReducer } from './state/reducers/user.reducer';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreDevtools, StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { StoreDevtools, StoreDevtoolsModule } from '@ngrx/store-devtools';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000',
     }),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
