@@ -11,3 +11,7 @@ ng new my-app --directory=Chapter1
 ```
 ng serve --port=4200
 ```
+
+# Reference
+
+- [Angular Projects](https://github.com/PacktPublishing/Angular-Projects-Third-Edition)
