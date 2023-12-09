@@ -12,6 +12,13 @@ ng new my-app --directory=Chapter1
 ng serve --port=4200
 ```
 
-# Reference
+## Extension installed
+- Nx Console
+- Angular Language Service
+- Angular Snippets
+- Angular Evergreen
+- Material Icon Theme
+
+## Reference
 
 - [Angular Projects](https://github.com/PacktPublishing/Angular-Projects-Third-Edition)
