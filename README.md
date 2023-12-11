@@ -60,6 +60,18 @@ ng generate module shared
 ng generate component footer --path=src/app/shared --module=shared --export
 ```
 
+## 7. Create contact module.
+
+```
+ng generate module contact
+```
+
+## 8. Create contact component.
+
+```
+ng generate component contact --path=src/app/contact --module=contact --export --flat
+```
+
 ## Reference
 
 - [Angular Projects](https://github.com/PacktPublishing/Angular-Projects-Third-Edition)
