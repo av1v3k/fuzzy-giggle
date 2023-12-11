@@ -72,6 +72,18 @@ ng generate module contact
 ng generate component contact --path=src/app/contact --module=contact --export --flat
 ```
 
+## 9. Adding articles feature module
+
+```
+ng generate module articles --route=articles
+```
+
+## Adding Scully to application.
+
+```
+npm install @scullyio/init @scullyio/ng-lib @scullyio/scully @scullyio/scully-plugin-puppeteer --force
+```
+
 ## Reference
 
 - [Angular Projects](https://github.com/PacktPublishing/Angular-Projects-Third-Edition)
