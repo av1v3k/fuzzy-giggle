@@ -1,0 +1,15 @@
+Folder "./scully" doesn't seem to contain custom plugins
+(You can skip this, or any future question by using the --noPrompt flag)
+handleUnknownRoute: "/assets/angular.png", 404:""
+Folder "./scully" doesn't seem to contain custom plugins
+----------------------------------   To discover new routes in the angular app use "npx scully --scanRoutes"Using stored unhandled routes!.----------------------------------
+
+
+
+handleUnknownRoute: "/assets/angular.png", 404:""
+Folder "./scully" doesn't seem to contain custom plugins
+----------------------------------Using stored unhandled routes!.   To discover new routes in the angular app use "npx scully --scanRoutes"----------------------------------
+
+
+
+handleUnknownRoute: "/assets/angular.png", 404:""

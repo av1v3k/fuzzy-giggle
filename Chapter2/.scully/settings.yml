@@ -1,0 +1,11 @@
+identifier: l1q7i8d3hdnchcj5
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: my-blog
+homeFolder: G:\2023\v1v3k\Repos\fuzzy-giggle\Chapter2
+distFolder: dist/my-blog
+outDir: G:\2023\v1v3k\Repos\fuzzy-giggle\Chapter2\dist\static
+handle404: ''
+allowErrorCollect: false

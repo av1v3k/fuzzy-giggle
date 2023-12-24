@@ -84,6 +84,44 @@ ng generate module articles --route=articles
 npm install @scullyio/init @scullyio/ng-lib @scullyio/scully @scullyio/scully-plugin-puppeteer --force
 ```
 
+## Intialize blog page:
+
+```
+ng generate @scullyio/init:markdown --project my-blog
+```
+
+Above command would consecutively ask many questions which needs to be answered.
+
+```
+npx nx generate @scullyio/init:create-markdown --name=posts --route=posts --sourceDir=mdfiles --project=my-blog --no-interactive
+```
+
+Import the below in articles component.
+
+```
+import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
+import { Observable, map } from 'rxjs';
+```
+
+To Build and generate blog routes,
+```
+ng build
+npx scully --project my-blog
+```
+
+To serve the blog, The command starts 2 web servers - 1. static prerendered version of our website built using Scully 2. Angular Live version.
+```
+npx scully serve --project my-blog
+```
+
+To Create a New Blog Post: - which creates a new .md files in the folder mdfiles and edit the file. And follow, previous 2 commands above to build and serve the application.
+
+```
+ng generate @scullyio/init:post --name="Angular and Scully"
+```
+
+
+
 ## Reference
 
 - [Angular Projects](https://github.com/PacktPublishing/Angular-Projects-Third-Edition)
