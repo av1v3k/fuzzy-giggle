@@ -120,7 +120,23 @@ To Create a New Blog Post: - which creates a new .md files in the folder mdfiles
 ng generate @scullyio/init:post --name="Angular and Scully"
 ```
 
+# Chapter 3: Issue Tracking System
 
+Initialize the Project:
+
+```
+ng new issue-tracker --defaults
+```
+
+Install cds
+```
+npm install @cds/core @clr/angular @clr/ui --save
+```
+
+Create service issues,
+```
+ng generate service issues
+```
 
 ## Reference
 
