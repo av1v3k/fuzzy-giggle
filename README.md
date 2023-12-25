@@ -138,6 +138,11 @@ Create service issues,
 ng generate service issues
 ```
 
+This command would ask the user the name of the Interface to be created. This is for any component/service/Interface/module
+```
+ng g i --path=src/app/Interface
+```
+
 ## Reference
 
 - [Angular Projects](https://github.com/PacktPublishing/Angular-Projects-Third-Edition)
